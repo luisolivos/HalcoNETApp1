@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HotelApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+</head>
+
+<body>
+    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-collapsed="false">
+          <legend>Buscar</legend>
+          
+          <label for="textinput-f">Artículo:</label>
+          <input type="text" data-clear-btn="true" data-clear-btn="true" name="txtItemCode" id="txtItemCode" placeholder="Código">
+          <input type="text" data-clear-btn="true" data-clear-btn="true" name="txtItemName" id="txtItemName" placeholder="Descripción">
+    </div>
+    
+    <div  data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-collapsed="false">
+          <label for="textinput-5">Precio($):
+          <input type="text" data-clear-btn="true" name="txtPrecio" id="txtPrecio" data-mini="true"></label>
+          <label for="textinput-5">Utilidad(%):
+          <input type="text" data-clear-btn="true" name="txtUtilidad" id="txtUtilidad" data-mini="true"></label>
+    </div>
+
+    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+          <legend>Listas de precios</legend>
+          <table data-role="table" id="tblLista" data-mode="columntoggle" data-column-btn-text="" data-column-btn-theme="a" class="phone-compare ui-shadow table-stroke">
+            <thead>
+              <tr>
+                <th class="label">Lista</th>
+                <th>Apple</th>
+                <th>Samsung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="label">Lista1</th>
+                <td>4.87"</td>
+                <td>5.38"</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+
+    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+          <legend>Stocks</legend>
+          <table data-role="table" id="tblLista" data-mode="columntoggle" data-column-btn-text="" data-column-btn-theme="a" class="phone-compare ui-shadow table-stroke">
+            <thead>
+              <tr>
+                <th class="label">Almacén</th>
+                <th>Stock</th>
+                <th>Solicitado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="label">Lista1</th>
+                <td>4.87"</td>
+                <td>5.38"</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+    <!--<script src="cordova.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- <script src="js/API/mediaCapture.js"></script>-->
+    <script src="js/actions.js"></script>
+
+</body>
+</html>
